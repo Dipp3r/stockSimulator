@@ -1,0 +1,46 @@
+<mat-accordion>
+  <div class="card">
+    <div id="left">
+      <p>Cash</p>
+      <img src="../../assets/images/coin.svg" alt="coin" />
+    </div>
+
+    <div id="middle" class="mr-2">
+      <p>₹30,000</p>
+    </div>
+  </div>
+
+  <mat-expansion-panel *ngFor="let product of products">
+    <mat-expansion-panel-header>
+     <div class="row1">
+      <p>{{product.title}}</p>
+      <p id="amount">₹{{product.amount}}</p>
+      <div class="status">
+        <img src={{getStatus(product.status)}} alt={{product.status}}/>
+        <p class={{product.status}}>{{product.price}}</p>
+      </div>
+    </div>
+    </mat-expansion-panel-header>
+
+    <div id="expand" *ngFor="let element of product.content">
+      <div class="row">
+          <p id="name">{{element.name}}</p>
+          <div>
+              <p>{{element.amount}}</p>
+              <div>
+                  <img src={{getStatus(element.status)}} alt={{element.status}}/>
+                  <p class={{element.status}}>{{element.percent}}%</p>
+              </div>
+          </div>
+          <div>
+              <p>₹{{element.totalAmount}}</p>
+              <div>
+                  <img src={{getStatus(element.overallStatus)}} alt={{element.overallStatus}}/>
+                  <p class={{element.overallStatus}}>₹{{element.rate}}</p>
+              </div>
+          </div>
+      </div>
+      <hr/>
+    </div>
+  </mat-expansion-panel>
+</mat-accordion>

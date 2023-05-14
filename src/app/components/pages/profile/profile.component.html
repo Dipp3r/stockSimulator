@@ -1,0 +1,51 @@
+<div id="profile">
+  <div id="topBar">
+      <div></div>
+      <p>Profile</p>
+      <div id="timer">
+          <img src="../../assets/images/Alarmclock.svg" alt="timer"/>
+          <p>05:00</p>
+      </div>
+  </div>
+  <div id="main">
+  <div id="circle">
+      <div id="progress"></div>
+      <p id="title">Year</p>
+      <p id="yearNum">2100</p>
+  </div>
+  <div id="badgeStart" class="badgeRow">
+      <img src="../../assets/images/badge.svg" alt="badge1"/>
+      <img src="../../assets/images/emptyBadge.svg" alt="emptyBadge"/>
+      <img src="../../assets/images/emptyBadge.svg" alt="emptyBadge"/>
+  </div>
+  <div class="badgeRow">
+      <img src="../../assets/images/emptyBadge.svg" alt="emptyBadge"/>
+      <img src="../../assets/images/emptyBadge.svg" alt="emptyBadge"/>
+      <img src="../../assets/images/emptyBadge.svg" alt="emptyBadge"/>
+      <img src="../../assets/images/emptyBadge.svg" alt="emptyBadge"/>
+  </div>
+  <div routerLink="/news" id="card"></div>
+  <p id="desc">Will unlock once all the badges have been collected</p>
+  <div id="options">
+      <button routerLink="/portfolio" class="option">
+          <img src="../../assets/images/pie_chart.svg" alt="portfolio logo"/>
+          <p>Portfolio</p>
+      </button>
+      <hr/>
+
+      <button routerLink="/team" class="option" id="team">
+          <img src="../../assets/images/Group.svg" alt="team logo"/>
+          <p>Team</p>
+      </button>
+
+      <hr/>
+      <button routerLink="/login" class="option">
+          <img src="../../assets/images/Vector.svg" alt="logout logo"/>
+          <p>Logout</p>
+      </button>
+  </div>
+
+  <app-bottom-nav> </app-bottom-nav>
+
+  </div>
+</div>

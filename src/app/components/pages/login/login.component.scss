@@ -1,0 +1,75 @@
+@import '../../../../styles';
+
+#login {
+  @include flex(column, flex-start, center);
+  width: 390px;
+  height: 844px;
+  #portion1 {
+    width: 100%;
+    margin-top: 100px;
+    @include flex(row, space-between, center);
+    #description {
+      margin: 50px;
+      @include flex(column, center, flex-start);
+      p {
+        margin: 0px;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 35px;
+        line-height: 43px;
+        color: #363636;
+      }
+    }
+
+    img {
+      margin-right: 100px;
+    }
+  }
+  div {
+    margin-bottom: 30px;
+    width: 270px;
+    @include flex(column, center, flex-start);
+    input {
+      border: none;
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 22px;
+      border-bottom: 2px solid #d9d9d9;
+      ::placeholder {
+        color: #8a8a8a;
+      }
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+  #loginButton {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    padding: 5px 10px;
+    width: 124px;
+    height: 49px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    color: #ffffff;
+    background: #223f80;
+    border-radius: 35px;
+    &:focus {
+      opacity: 0.8;
+    }
+  }
+}
+
+
+mat-error{
+  margin-top:5px;
+  font-size: small;
+  font-family: 'Inter';
+  color:rgba(185, 9, 9, 0.9);
+}

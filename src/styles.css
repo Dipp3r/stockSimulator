@@ -1,0 +1,81 @@
+/* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: Montserrat;
+  src: url(./assets/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: Inter;
+  src: url(./assets/Inter/Inter-VariableFont_slntwght.ttf);
+}
+body {
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 0px;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+app-root {
+  position: fixed;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+}
+
+section {
+  overflow: auto;
+  height: 100vh;
+  width: 100vw;
+  padding-top: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+}
+button:focus {
+  outline: none;
+  border: none;
+}
+
+.mr-2 {
+  margin-right: 20px;
+}
+
+.gain {
+  color: #6BC640;
+}
+
+.loss {
+  color: #FB5151;
+}
+
+.final {
+  margin-bottom: 40px;
+}
+
+.coin {
+  height: 30px;
+  width: 30px;
+}
+
+.text-thin {
+  font-weight: 400;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0px;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,33 @@
+<div id='login' >
+  <div id="portion1">
+      <div id="description">
+          <p>Login</p>
+          <p>to</p>
+          <p>play</p>
+      </div>
+      <img src="../../assets/images/coin.svg" alt="coin"/>
+  </div>
+  <form [formGroup]="loginForm">
+    <div>
+      <input type="text" placeholder="Name" formControlName="userName"/>
+      <mat-error *ngIf="Name.errors?.['required'] && (Name.touched || Name.dirty)">Name is required.</mat-error>
+      <mat-error *ngIf="Name.errors?.['minlength'] && Name.touched">The given name is too short.</mat-error>
+      <mat-error *ngIf="Name.errors?.['pattern'] && (Name.touched || Name.dirty) && Name.value.length>=3">Not a valid name.</mat-error>
+    </div>
+    <div>
+      <input type="text" placeholder="1234567890" formControlName="mobile"/>
+      <mat-error class="error" *ngIf="Mobile.errors?.['required'] && (Mobile.touched || Mobile.dirty)">Mobile number is required.</mat-error>
+      <mat-error *ngIf="Mobile.errors?.['minlength'] && (Mobile.touched ||  Mobile.dirty)">Must have 10 digits</mat-error>
+      <mat-error *ngIf="Mobile.errors?.['maxlength'] && (Mobile.dirty||Mobile.touched)">Must have no more than 10 digits</mat-error>
+      <mat-error *ngIf="Mobile.errors?.['pattern'] && (Mobile.touched || Mobile.dirty)">Not a valid phone number</mat-error>
+    </div>
+    <div>
+      <input type="password" placeholder="sample@123" formControlName="password"/>
+      <mat-error *ngIf="Password.errors?.['required'] && (Password.touched || Password.dirty)">Password is required.</mat-error>
+      <mat-error *ngIf="Password.errors?.['minlength'] && Password.touched">Password must contain at least 8 characters</mat-error>
+      <mat-error *ngIf="Password.hasError('passwordRequirements')">Including at least 1 uppercase, 1 lowercase, 1 number, and 1 of the following special characters: @, #, +, $.</mat-error>
+    </div>
+    <button [disabled]="!loginForm.valid" id="loginButton" routerLink="/profile" (click)="loginSubmit()" type="button">Login</button>
+  </form>
+
+</div>

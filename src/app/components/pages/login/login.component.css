@@ -1,0 +1,168 @@
+/* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: Montserrat;
+  src: url(./Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: Inter;
+  src: url(./Inter/Inter-VariableFont_slntwght.ttf);
+}
+body {
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 0px;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+app-root {
+  position: fixed;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+}
+
+section {
+  overflow: auto;
+  height: 100vh;
+  width: 100vw;
+  padding-top: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+}
+button:focus {
+  outline: none;
+  border: none;
+}
+
+.mr-2 {
+  margin-right: 20px;
+}
+
+.gain {
+  color: #6BC640;
+}
+
+.loss {
+  color: #FB5151;
+}
+
+.final {
+  margin-bottom: 40px;
+}
+
+.coin {
+  height: 30px;
+  width: 30px;
+}
+
+.text-thin {
+  font-weight: 400;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0px;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+#login {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 390px;
+  height: 844px;
+}
+#login #portion1 {
+  width: 100%;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+#login #portion1 #description {
+  margin: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+#login #portion1 #description p {
+  margin: 0px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 43px;
+  color: #363636;
+}
+#login #portion1 img {
+  margin-right: 100px;
+}
+#login div {
+  margin-bottom: 30px;
+  width: 270px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+#login div input {
+  border: none;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  border-bottom: 2px solid #d9d9d9;
+}
+#login div input ::-moz-placeholder {
+  color: #8a8a8a;
+}
+#login div input ::placeholder {
+  color: #8a8a8a;
+}
+#login div input:focus {
+  outline: none;
+}
+#login #loginButton {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  padding: 5px 10px;
+  width: 124px;
+  height: 49px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  color: #ffffff;
+  background: #223f80;
+  border-radius: 35px;
+}
+#login #loginButton:focus {
+  opacity: 0.8;
+}
+
+mat-error {
+  margin-top: 5px;
+  font-size: small;
+  font-family: "Inter";
+  color: rgba(185, 9, 9, 0.9);
+}/*# sourceMappingURL=login.component.css.map */

@@ -1,0 +1,64 @@
+<div id="portfolio">
+    <div id="topBar">
+        <button routerLink="/profile"><img src="../../assets/images/Arrow_left.svg" alt="back_arrow"/></button>
+        <p>Portfolio</p>
+        <div id="timer">
+            <img src="../../assets/images/Alarmclock.svg" alt="timer"/>
+            <p>05:00</p>
+        </div>
+    </div>
+    <div id="main">
+        <app-chart></app-chart>
+        <div class="row">
+            <div class="column">
+                <div class="content">
+                    <img src="../../assets/images/dot1.svg" alt="stocks"/>
+                    <p>
+                        Stocks
+                    </p>
+                </div>
+                <div class="content">
+                    <img src="../../assets/images/dot3.svg" alt="Commodities"/>
+                    <p>
+                        Commodities
+                    </p>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="content">
+                    <img src="../../assets/images/dot2.svg" alt="Mutual funds"/>
+                    <p>
+                        Mutual funds
+                    </p>
+                </div>
+                <div class="content">
+                    <img src="../../assets/images/dot4.svg" alt="Cash"/>
+                    <p>
+                        Cash
+                    </p>
+                </div>
+            </div>
+        </div>
+        <p id="title">NET WORTH</p>
+        <p id="amount">₹ 10,00,00,000</p>
+        <div id="row1">
+            <p> This year's Gain/Loss</p>
+            <p> Overall Gain/Loss</p>
+        </div>
+        <div id="row2">
+            <div class="rowContent">
+                <img src="../../assets/images/loss.svg" alt="loss"/>
+                <p>20,000</p>
+                <p id="percentage">5%</p>
+            </div>
+            <hr/>
+            <div class="rowContent">
+                <img src="../../assets/images/gain.svg" alt="gain"/>
+                <p>10,000</p>
+                <p id="percentage">2.5%</p>
+            </div>
+        </div>
+        <app-product-list></app-product-list>
+    </div>
+</div>
