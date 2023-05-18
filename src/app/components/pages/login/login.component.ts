@@ -33,6 +33,13 @@ export class LoginComponent implements OnInit {
 
   loginSubmit(){
     console.log(this.loginForm.get("mobile")?.value);
+    const data = this.loginForm.value;
+    this.loginService.insertUser(data).subscribe(
+      response=>{},
+      error=>{
+        console.log("ERROR: "+error.message);
+      }
+    )
   }
 
   get Name(): FormControl{
